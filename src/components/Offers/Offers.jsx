@@ -19,7 +19,7 @@ const Offers = () => {
               <p className='text-2xl font-semibold fon uppercase'>only on best sellers product</p>
 <Link to="/about" className=" ">
   <button className="text-xl bg-pink-500 hover:bg-pink-300 text-white font-bold py-2 mt-8 px-6 rounded-full shadow-md transition duration-300 transform hover:scale-105">
-   heck Now
+   Check Now
   </button>
 </Link>
 

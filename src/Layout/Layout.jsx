@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
+import NewsLetter from "../components/NewsLetter/NewsLetter";
 
 
 const Layout = () => {
@@ -7,6 +8,7 @@ const Layout = () => {
         <div>
             <Navbar></Navbar>
       <Outlet></Outlet>
+      <NewsLetter></NewsLetter>
         </div>
     );
 };
