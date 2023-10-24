@@ -1,0 +1,18 @@
+import React from 'react';
+import Banner from './Banner';
+import Popular from '../../../components/Popular/Popular';
+import Offers from '../../../components/Offers/Offers';
+import NewCollections from '../../../components/NewCollections/NewCollections';
+
+const Shop = () => {
+    return (
+        <div>
+            <Banner></Banner>
+            <Popular></Popular>
+            <Offers></Offers>
+            <NewCollections></NewCollections>
+        </div>
+    );
+};
+
+export default Shop;
