@@ -6,6 +6,7 @@ const Item = (props) => {
  const {id,image,name,new_price,old_price} =  props.item
  const {user} = useContext(AuthContext) 
     return (
+    
         <Link to={user? `/product/${id}`: '/login'} className="group relative">
           {/* This route will not work if you don't log in registration, you need to login */}
            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
@@ -26,6 +27,7 @@ const Item = (props) => {
             </div>
           </div>
           </Link>
+    
     );
 };
 
