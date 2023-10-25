@@ -24,7 +24,6 @@ const Breadcrumb = (props) => {
                     Shop
                   </p>
                     <MdKeyboardArrowRight width={16}  className=" text-gray-500"/>
-            
                 </div>
               </li>
               <li >
@@ -33,7 +32,6 @@ const Breadcrumb = (props) => {
                    {product.category}
                   </p>
                     <MdKeyboardArrowRight width={16}  className=" text-gray-500"/>
-            
                 </div>
               </li>
             <li className="">

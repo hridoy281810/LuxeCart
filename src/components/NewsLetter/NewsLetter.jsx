@@ -38,9 +38,10 @@ const NewsLetter = () => {
                 <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                   <CalendarDaysIcon className="h-6 w-6 text-white" aria-hidden="true" />
                 </div>
-                <dt className="mt-4 font-semibold text-white">Weekly articles</dt>
+                <dt className="mt-4 font-semibold text-white">INFORMATION</dt>
+
                 <dd className="mt-2 leading-7 text-gray-400">
-                  Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.
+                PMoooooM
                 </dd>
               </div>
               <div className="flex flex-col items-start">
@@ -67,8 +68,7 @@ const NewsLetter = () => {
         </div>
         <footer className="footer mx-auto max-w-7xl px-6 lg:px-8 mt-10 items-center p-4  text-neutral-content">
   <aside className="items-center grid-flow-col">
-   <h1 className='text-xl font-bold'>LuxeCart
-</h1>
+  <h1 className='text-3xl text-pink-500 font-semibold font-serif'>LuxeCart</h1>
     <p>Copyright © 2023 - All right reserved</p>
   </aside> 
   <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

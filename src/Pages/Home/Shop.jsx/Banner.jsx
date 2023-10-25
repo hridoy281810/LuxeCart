@@ -1,23 +1,22 @@
 import React from 'react';
-import bannerImg from '../../../assets/banner/girl1.png'
-// import bannerImg from '../../../assets/banner/girl2.png'
+import bannerImg from '../../../assets/banner/girl3.png'
 import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
-        <div className="bg-gradient-to-r from-pink-300 to-white mb-10">
-        <div className="my-container h-auto lg:h-[100vh] grid py-5 lg:py-0 gap-10 my-12 lg:my-0 lg:grid-cols-2 items-center">
+        <div className="bg-gradient-to-r from-pink-300 to-white  mb-10">
+        <div className="my-container h-auto lg:h-[100vh] grid py-10 lg:py-0 gap-10  lg:my-0 lg:grid-cols-2 items-center">
           <div
             className="lg:w-full w-[90vw] order-2 lg:order-1 static md:text-center lg:text-start text-center"
           >
             <div className="space-y-3">
                 <p className='text-2xl font-semibold fon'>NEW ARRIVALS ONLY</p>
-              <h1 className="text-7xl font-bold">
+           <h1 className="lg:text-7xl text-5xl  font-bold">
                 new
               </h1>
-              <h1 className="text-7xl font-bold">
+              <h1 className="lg:text-7xl text-5xl font-bold">
               collections
               </h1>
-              <h1 className="text-7xl font-bold mb-10">
+              <h1 className="lg:text-7xl text-5xl font-bold mb-10">
              for everyone
               </h1>
             

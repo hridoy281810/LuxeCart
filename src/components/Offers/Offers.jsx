@@ -4,16 +4,16 @@ import image from '../../assets/banner/girl2.png'
 const Offers = () => {
     return (
         <div className="my-container bg-gradient-to-b from-pink-300 to-white mb-10 px-20 py-6 rounded">
-        <div className=" h-auto lg:h-[70vh] grid py-5 lg:py-0 gap-10 my-12 lg:my-0 lg:grid-cols-2 items-center">
+        <div className=" h-auto lg:h-[70vh] grid   lg:py-0 gap-10  lg:my-0 lg:grid-cols-2 items-center justify-center">
           <div
             className="lg:w-full w-[90vw] order-2 lg:order-1 static md:text-center lg:text-start text-center"
           >
             <div className="space-y-3">
               
-              <h1 className="text-7xl font-bold">
+              <h1 className="lg:text-7xl text-5xl font-bold">
             Exclusive
               </h1>
-              <h1 className="text-7xl font-bold mb-10">
+              <h1 className="lg:text-7xl text-5xl font-bold mb-10">
             Offers For You
               </h1>
               <p className='text-2xl font-semibold fon uppercase'>only on best sellers product</p>
