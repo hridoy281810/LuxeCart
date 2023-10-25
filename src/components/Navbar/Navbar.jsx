@@ -4,7 +4,8 @@ import { Bars3Icon, ShoppingCartIcon, XMarkIcon } from '@heroicons/react/24/outl
 import { Link } from 'react-router-dom'
 import { ShopProvider } from '../../Provider/ShopProvider'
 import { AuthContext } from '../../Provider/AuthProvider'
-
+// Fake data 
+// TODO: Implement dynamic data in future
 const person = {
   name: 'Tom Cook',
   email: 'tom@example.com',
@@ -12,7 +13,7 @@ const person = {
     'https://i.ibb.co/JdM7pdM/IMG-2061.jpg',
 }
 const navigation = [
-  { name: 'Shop', href: '/', current: true },
+  { name: 'Home', href: '/', current: true },
   { name: 'Men', href: '/men', current: false },
   { name: 'Women', href: 'women', current: false },
   { name: 'Kids', href: 'kid', current: false },
@@ -28,7 +29,6 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-
   const {getTotalCardItem} = useContext(ShopProvider) 
   const {user,logOut} = useContext(AuthContext) 
    const handleLogOut = ()=>{
@@ -40,6 +40,7 @@ const Navbar = () => {
   }
     return (
         <div className="min-h-full">
+          {/* Navbar Item  */}
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
             <>
@@ -69,20 +70,19 @@ const Navbar = () => {
                       </div>
                     </div>
                   </div>
+                  {/* Cart Icon  */}
                   <div className="hidden md:block">
                     <div className="ml-4 flex items-center md:ml-6">
                       <Link to="/cart"
                         type="button"
                         className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                       >
-                        <span className="absolute -inset-1.5 cursor-pointer" />
-                       
+                        <span className="absolute -inset-1.5 cursor-pointer" /> 
                         <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
-
                       </Link>
- <span className="inline-flex   font-semibold text-pink-500 items-center rounded-md mb-7 -ml-3  z-10  bg-gray-50  px-2 py-1 text-xs fnt-medium  ring-1 ring-inset ring-gray-500/10">
- {getTotalCardItem()}
-    </span>
+                    <span className="inline-flex   font-semibold text-pink-500 items-center rounded-md mb-7 -ml-3  z-10  bg-gray-50  px-2 py-1 text-xs fnt-medium  ring-1 ring-inset ring-gray-500/10">
+                                           {getTotalCardItem()}
+                      </span>
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
                         <div>
@@ -117,11 +117,11 @@ const Navbar = () => {
                                 )}
                               </Menu.Item>
                             ))}
-                                               {
-        user ? <><p onClick={handleLogOut}  className="block px-4 py-2 text-sm text-gray-700">Logout</p></> : 
-        <Link to='/login'  className='block px-4 py-2 text-sm text-gray-700'
-        >Login</Link>
-       } 
+                            {
+                                user ? <><p onClick={handleLogOut}  className="block px-4 py-2 text-sm text-gray-700">Logout</p></> : 
+                                <Link to='/login'  className='block px-4 py-2 text-sm text-gray-700'
+                                >Login</Link>
+                                  } 
                           </Menu.Items>
                         </Transition>
                       </Menu>

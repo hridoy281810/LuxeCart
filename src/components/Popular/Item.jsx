@@ -7,6 +7,7 @@ const Item = (props) => {
  const {user} = useContext(AuthContext) 
     return (
         <Link to={user? `/product/${id}`: '/login'} className="group relative">
+          {/* This route will not work if you don't log in registration, you need to login */}
            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
             <img src={image} alt=""  className="h-full w-full object-cover object-center lg:h-full lg:w-full"/></div>
             <div className="mt-4 flex justify-between">
@@ -19,15 +20,12 @@ const Item = (props) => {
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">Black</p>
                 </div>
-        <div>
-        <p className="text-sm font-medium text-gray-900">${new_price}</p>
+              <div>
+               <p className="text-sm font-medium text-gray-900">${new_price}</p>
               <p className="text-sm font-medium text-gray-500 line-through">${old_price}</p>
-        </div>
-              </div>
-            </Link>
-
-            
-      
+            </div>
+          </div>
+          </Link>
     );
 };
 

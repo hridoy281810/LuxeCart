@@ -45,8 +45,8 @@ const SigUp = () => {
           Login in to your account
           </h2>
         </div>
-
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          {/* signup form  */}
           <form  onSubmit={handleRegister} className="space-y-6" >
             <div>
               <label htmlFor="Name" className="block text-sm font-medium leading-6 text-gray-900">

@@ -21,7 +21,7 @@ const ShopContextProvider = ({ children }) => {
             setCartItems(savedCartItems);
         }
     }, []);
-
+    // Data add to cart 
     const addToCart = (itemId) => {
         setCartItems((prev) => {
             const updatedCart = { ...prev, [itemId]: prev[itemId] + 1 };
@@ -29,7 +29,7 @@ const ShopContextProvider = ({ children }) => {
             return updatedCart;
         });
     }
-
+    // Remove From Cart 
     const removeFromCart = (itemId) => {
         if (cartItems[itemId] > 0) {
             setCartItems((prev) => {
@@ -39,12 +39,12 @@ const ShopContextProvider = ({ children }) => {
             });
         }
     }
-
+// update local storage 
     const updateLocalStorage = (cartData) => {
         // Save cartData to local storage
         localStorage.setItem('cartItems', JSON.stringify(cartData));
     }
-
+//    total shopping amount
     const getTotalAmount = () => {
         let totalAmount = 0;
         for (const item in cartItems) {
@@ -55,7 +55,7 @@ const ShopContextProvider = ({ children }) => {
         }
         return totalAmount;
     }
-
+//   total cart item 
      const getTotalCardItem = () => {
         let totalItem = 0;
         for(const item in cartItems){
